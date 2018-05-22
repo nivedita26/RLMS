@@ -550,7 +550,7 @@ public class DashboardServiceImpl implements DashboardService {
 		for (RlmsEventDtls rlmsEventDtls : allEvent) {
 			//RlmsUserRoles userRoles = null;
 			//this.
-			RlmsLiftCustomerMap liftCustomerMap = this.liftDao.getLiftCustomerMapById(rlmsEventDtls.getLiftCustomerMapId());
+		/*	RlmsLiftCustomerMap liftCustomerMap = this.liftDao.getLiftCustomerMapById(rlmsEventDtls.getLiftCustomerMapId());
 					
 			EventDtlsDto dto = new EventDtlsDto();
 			dto.setEventId(rlmsEventDtls.getEventId());
@@ -562,7 +562,7 @@ public class DashboardServiceImpl implements DashboardService {
 			dto.setCustomerName(liftCustomerMap.getBranchCustomerMap().getCustomerMaster().getCustomerName());
 			
 			listOFDto.add(dto);
-			
+			*/
 		}
 		return listOFDto;
 	}
@@ -584,7 +584,7 @@ public class DashboardServiceImpl implements DashboardService {
 		RlmsEventDtls eventDtls = new RlmsEventDtls();
 		eventDtls.setEventType(dto.getEventType());
 		eventDtls.setEventDescription(dto.getEventDescription());
-		eventDtls.setLiftCustomerMapId(dto.getLiftCustomerMapId());
+		//eventDtls.setLiftCustomerMapId(dto.getLiftCustomerMapId());
 		eventDtls.setGeneratedDate(DateUtils.convertStringToDateWithTime(dto.getGeneratedDateStr()));
 		eventDtls.setGeneratedBy(dto.getGeneratedBy());
 		eventDtls.setUpdatedDate(DateUtils.convertStringToDateWithTime(dto.getUpdatedDateStr()));

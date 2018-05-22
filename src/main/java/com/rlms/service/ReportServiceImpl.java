@@ -452,7 +452,7 @@ public class ReportServiceImpl implements ReportService {
 		eventDtls.setEventType(dto.getEventType());
 		eventDtls.setGeneratedBy(RLMSConstants.EVENT_BY_LIFT.getId());
 		eventDtls.setGeneratedDate(new Date());
-		eventDtls.setLiftCustomerMapId(dto.getLiftCustomerMapId());
+	//	eventDtls.setLiftCustomerMapId(dto.getLiftCustomerMapId());
 		eventDtls.setUpdatedBy(RLMSConstants.EVENT_BY_LIFT.getId());
 		eventDtls.setUpdatedDate(new Date());
 		return eventDtls;
